@@ -1,0 +1,36 @@
+{
+  "name": "opencode-codex-autoreview",
+  "version": "0.1.0-experimental.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Experimental advisory and deny-only Codex permission reviewer for OpenCode V2 (no auto-approval)",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "index.js",
+    "dist",
+    "README.md",
+    "RESEARCH.md",
+    "LICENSE",
+    "VERIFICATION.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.25"
+  },
+  "devDependencies": {
+    "@opencode/sdk": "2.0.25",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
