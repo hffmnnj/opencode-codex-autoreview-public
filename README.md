@@ -1,3 +1,5 @@
+![Codex Autoreview: a second look at permissions](assets/banner.png)
+
 # opencode-codex-autoreview
 
 **Experimental permission advice and optional denial enforcement for OpenCode V2 2.0.25. It does not auto-approve actions.**
